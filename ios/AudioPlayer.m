@@ -11,4 +11,5 @@
 
 @interface RCT_EXTERN_MODULE(AudioPlayer, NSObject)
     RCT_EXTERN_METHOD(start:(NSString *)url)
+    RCT_EXTERN_METHOD(stop)
 @end
