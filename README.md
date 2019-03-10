@@ -42,7 +42,21 @@
 
 ## Usage
 ```javascript
+import React from 'react';
+import { View } from 'react-native';
 import AudioPlayer from 'react-native-streaming-audio';
 
-AudioPlayer;
+export default class AudioIdea extends React.Component {
+  componentDidMount() {
+    AudioPlayer.start('https://test.test.com/stream');
+  }
+
+  componentWillUnmount() {
+    AudioPlayer.stop();
+  }
+
+  render() {
+    return <View />;
+  }
+}
 ```
