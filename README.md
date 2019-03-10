@@ -9,7 +9,7 @@
 
 ### Yarn Install
 
-`yarn add react-native-streaming-audio`
+`$ yarn add react-native-streaming-audio`
 
 ### Mostly automatic installation
 
