@@ -17,6 +17,15 @@ public class RNStreamingAudioModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNStreamingAudio";
+    return "AudioPlayer";
+  }
+
+  @ReactMethod
+  public void getDeviceName(Callback cb) {
+    try{
+      cb.invoke(null, android.os.Build.MODEL);
+    }catch (Exception e){
+      cb.invoke(e.toString(), null);
+    }
   }
 }
