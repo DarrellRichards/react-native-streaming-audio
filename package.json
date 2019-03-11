@@ -7,8 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "license": "MIT",
   "keywords": [
-    "react-native"
+    "react-native",
+    "audio-streaming",
+    "music-player"
   ],
   "author": [{
     "name": "Darrell Richards",
